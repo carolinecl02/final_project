@@ -1,0 +1,65 @@
+.explain {
+	/*background-color: rgb(63, 155, 155);*/
+	background: linear-gradient(150deg, #2a8791, #7af3b0);
+	padding: 50px;
+	max-width: 1200px;
+}
+
+.tagline {
+	color: white;
+	font-weight: 700;
+}
+
+.subtagline {
+	text-align: center;
+}
+
+.richlistmain {
+	background-image: url("./../images/field.jpg");
+	background-size: 1200px 500px;
+	max-width: 1200px;
+	padding: 50px;
+	display: block;
+  	text-align: center;
+}
+
+.centerform{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.instruction {
+	font-size: 20px;
+	font-color: black;
+	display: block;
+}
+
+.inputnetworth {
+	height: 45px;
+}
+
+.btn {
+	display: inline; 
+}
+
+ul {
+	text-align: center;
+	max-width: 1200px;
+}
+
+h2 {
+	text-align: center;
+	padding: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400; 
+}
+
+.personname {
+	color: orange;
+	display: inline; 
+}
+
+.personpic {
+	display: inline; 
+}

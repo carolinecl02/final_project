@@ -1,0 +1,59 @@
+.explain {
+	background: linear-gradient(150deg, #2a8791, #7af3b0);
+	padding: 50px;
+	max-width: 1200px;
+}
+
+.tagline {
+	color: white;
+	font-weight: 700;
+}
+
+.subtagline {
+	text-align: center;
+}
+
+.planintro {
+	text-align: center;
+	max-width: 1200px;
+	padding: 50px;
+}
+
+.card-img-top {
+	/*height: 80px;*/
+}
+
+.card {
+	margin: 8px;
+}
+
+.card-text {
+	text-align: center;
+}
+
+.selected {
+	border-color: #2a8791;
+	border-width: 2px;
+}
+
+.goal-amount {
+	display: none;
+}
+
+.buttondiv {
+	text-align: center;
+}
+
+.btn-warning {
+	display: inline;
+	margin-bottom: 20px;
+	width: 200px;
+}
+
+#addButton {
+	display: none;
+}
+
+.totals-needed{
+	display: none;
+}
