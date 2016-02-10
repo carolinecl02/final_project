@@ -54,6 +54,19 @@
 	display: none;
 }
 
+#updateButton {
+	padding: 1px;
+	width: 80px; 
+}
+
 .totals-needed{
+	display: none;
+}
+
+.happyoutcome {
+	display: none;
+}
+
+.sadoutcome {
 	display: none;
 }

@@ -25,17 +25,35 @@ $("#nextButton").on('click', function(){
 
 })
 
-//on the next 'next' click, add up their amounts
+//on the next 'next', show the next calculations
 $("#addButton").on('click', function(){
 	$(".totals-needed").slideDown();
 
+	//set the default to zero 
+	var totalNeeded = 0;
+
+	$('#totalNeeded').text('£' + totalNeeded);
+
+	var totalNeeded = $(".goal-amount").val();
+
+	$('#totalNeeded').text('£' + totalNeeded);
+
+})
+
+	//on update button click, compare what they have put in to whatever 
+	$("#updateButton").on('click', function(){
+
+		$(".sadoutcome").slideDown();
+
+		var totalHave = $('#totalHave').val();
+		totalHave = parseFloat(totalHave);
+		totalResult = totalHave - totalNeeded; 
+		$('#totalResult').text('£' + totalResult.toFixed(2));
+	})
+
 	//find how much they put in into each goal 
 	
-
 	//add up the totals 
-
-
-	});
 
 
 });

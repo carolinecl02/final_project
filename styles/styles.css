@@ -2,7 +2,6 @@
 	font-family: 'Lato', sans-serif;
 }
 
-
 .divider {
 	height: 20px;
 	width: 1200px;
@@ -13,7 +12,6 @@
 .jumbotron {
 	max-width: 1200px;
 	background: linear-gradient(150deg, #2a8791, #7af3b0);
-	/*background-image: url("./../images/computer.jpeg");*/
 	margin-bottom: 2px;
 }
 
@@ -24,23 +22,11 @@
 	border-radius: 10px;
 }
 
-.tools {
-	background-color: rgba(3, 184, 175, 0.4);
-	background-image: url("./../images/dreamcatcher.jpg");
-	background-size: 1200px; 
-}
 
 .display-3 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400; 
 	color: white; 
-}
-
-h1 {
-	text-align: center;
-	padding: 20px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400; 
 }
 
 .lead {
@@ -49,24 +35,51 @@ h1 {
 	font-weight: 400;
 }
 
+.introbackground{
+	background-color: rgba(3, 184, 175, 0.4);
+	background-image: url("./../images/bubbles1.jpg");
+	background-size: 1200px;
+	max-width: 1200px; 
+	padding-top: 50px;
+}
+
+h1 {
+	text-align: center;
+	padding-bottom: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700; 
+	color: #2a8791;
+}
 
 h3 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400; 
 }
 
-.description {
+.row {
+	padding-top: 20px;
+}
+
+.card-title {
+	font-weight: 700; 
+	text-align: center;
+}
+
+.card-text {
 	font-size: 18px;
-	padding-left: 50px;
-	padding-right: 50px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300; 
-}
-
-.descriptionimage {
-	margin-bottom: 10px;
-}
-
-.youcan {
 	text-align: center;
+}
+
+.roundicon {
+	height: 70px;
+	width: 70px; 
+	margin-left: 170px;
+	border: 2px solid #f0ad4e;
+	border-radius: 40%;
+}
+
+.cardbutton{
+	margin-left: 120px; 
 }
