@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Financial Plan Builder</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite|Lato:400,300,700,900" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/finplanbuilderstyles.css">
 
@@ -31,12 +31,6 @@
     <li class="nav-item">
       <a class="nav-link" href="./budgetchecker.html">Budget Checker</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="./aboutus.html">About Us</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="./blog.html">Blog</a>
-    </li>
   </ul>
 </nav>
 
@@ -53,34 +47,33 @@
 </div>
 
 <div class="planintro">
-  <h4>1. To get started, pick the things you're looking to achieve from the list below. You can pick as many as you want!</h4>
+  <h4>1. To get started, pick the things you're looking to achieve from the list below and then hit 'next'. You can pick as many as you want!</h4>
   <div class="buttondiv">
     <button type="button" class="btn btn-warning" id="nextButton">NEXT</button>
     <button type="button" class="btn btn-warning" id="addButton">ADD IT UP</button>
-  </div>  
+  </div>
 </div>
 
 
 <div class="container">
-  <div class="totals-needed">
-    <h5>You need a total of</h5><p id="totalNeeded">1</p>
-    <h5>How much do you currently have?</h5><input id="totalHave">
-    <button type="button" class="btn btn-warning" id="updateButton">Update</button>
-  </div>
-  <div class="happyoutcome">
-    <h5>Hurray! You have enough right now to achieve all your dreams!</h5>
-    <p>You could still chat to a financial adviser to find out the best way to make sure it stays that way!</p>
-    <button type="button" class="btn btn-warning" id="nextButton">Find an adviser near you</button> 
-  </div>
-  <div class="sadoutcome">
-    <h5>Looks like you have a way to!</h5>
-    <p>It's worth chatting to a financial adviser to find out the best way to achieve your goals.</p>
-    <button type="button" class="btn btn-warning" id="nextButton">Find an adviser near you</button> 
-  </div>
-
+    <div class="totals-needed">
+      <h5>You need a total of</h5><p class="big-number" id="totalNeeded"></p>
+      <h5>How much do you currently have?</h5><input id="totalHave">
+      <button type="button" class="btn btn-warning" id="updateButton">Update</button>
+    </div>
+    <div class="happyoutcome">
+      <h5>Hurray! You have enough right now to achieve all your dreams!</h5>
+      <p>You could still chat to a financial adviser to find out the best way to make sure it stays that way!</p>
+      <button type="button" class="btn btn-warning" id="findAdviserButton">Find an adviser near you</button>
+    </div>
+    <div class="sadoutcome">
+      <h5>Looks like you have a way to go!</h5><p>You still need</p><p class="big-number" id="stillNeed"></p>
+      <p>It's worth chatting to a financial adviser to find out the best way to achieve your goals.</p>
+      <button type="button" class="btn btn-warning" id="findAdviserButto">Find an adviser near you</button>
+    </div>
+</div>
 
 <div class="container">
-
       <div class="card col-sm-3">
         <img class="card-img-top" src="./images/house.jpeg" alt="Card image cap">
         <div class="card-block">
@@ -88,7 +81,7 @@
           <input class="goal-amount">
         </div>
       </div>
- 
+
       <div class="card col-sm-3">
         <img class="card-img-top" src="./images/savingforkids.jpg" alt="Card image cap">
         <div class="card-block">
@@ -104,7 +97,7 @@
           <input class="goal-amount">
         </div>
       </div>
-  
+
     <div class="card col-sm-3">
         <img class="card-img-top" src="./images/piggybank.jpg" alt="Card image cap">
         <div class="card-block">
@@ -121,7 +114,7 @@
         </div>
     </div>
 
-    
+
     <div class="card col-sm-3">
         <img class="card-img-top" src="./images/emergency.jpg" alt="Card image cap">
         <div class="card-block">
@@ -153,7 +146,7 @@
           <input class="goal-amount">
         </div>
       </div>
-    
+
     <div class="card col-sm-3">
         <img class="card-img-top" src="./images/wedding.jpg" alt="Card image cap">
         <div class="card-block">
@@ -177,10 +170,8 @@
           <input class="goal-amount">
         </div>
       </div>
-
 </div>
 
-  
 
 <footer>
   <nav class="navbar navbar-light bg-faded">
@@ -201,4 +192,5 @@
 <script src="./finplanbuilder.js"></script>
 
 </body>
-
+</body>
+</html>

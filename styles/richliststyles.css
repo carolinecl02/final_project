@@ -40,26 +40,29 @@
 }
 
 .btn {
-	display: inline; 
+	display: inline;
 }
 
 ul {
 	text-align: center;
 	max-width: 1200px;
+	list-style: none;
 }
 
 h2 {
 	text-align: center;
 	padding: 20px;
 	font-family: 'Lato', sans-serif;
-	font-weight: 400; 
+	font-weight: 400;
 }
 
 .personname {
 	color: orange;
-	display: inline; 
+	display: inline;
+	padding: 2rem;
 }
 
 .personpic {
-	display: inline; 
+	display: inline;
+	margin; 2rem;
 }

@@ -1,6 +1,6 @@
 .explain {
 	background: linear-gradient(150deg, #2a8791, #7af3b0);
-	padding: 50px;
+	padding: 3rem;
 	max-width: 1200px;
 }
 
@@ -13,18 +13,24 @@
 	text-align: center;
 }
 
+h4 {
+	margin-bottom: 1rem;
+}
+
 .planintro {
 	text-align: center;
 	max-width: 1200px;
-	padding: 50px;
+	padding: 2rem;
 }
 
 .card-img-top {
-	/*height: 80px;*/
+	max-width: 100%;
 }
 
 .card {
+	border-width: 2px;
 	margin: 8px;
+	width: 30%;
 }
 
 .card-text {
@@ -33,11 +39,11 @@
 
 .selected {
 	border-color: #2a8791;
-	border-width: 2px;
 }
 
 .goal-amount {
 	display: none;
+	max-width: 100%;
 }
 
 .buttondiv {
@@ -54,19 +60,33 @@
 	display: none;
 }
 
+.bignumber {
+	font-family: 'Special Elite', cursive;
+	font-size: 2rem;
+	color: #2a8791;
+}
+
 #updateButton {
 	padding: 1px;
-	width: 80px; 
+	width: 80px;
+	margin-bottom: 3px;
+	background-color: #2a8791;
+	border-color: #2a8791;
 }
 
 .totals-needed{
 	display: none;
+	text-align: center;
 }
 
 .happyoutcome {
 	display: none;
+	text-align: center;
+	margin-top: 2rem;
 }
 
 .sadoutcome {
 	display: none;
+	text-align: center;
+	margin-top: 2rem;
 }
