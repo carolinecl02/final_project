@@ -1,42 +1,24 @@
-.explain {
-	/*background-color: rgb(63, 155, 155);*/
-	background: linear-gradient(150deg, #2a8791, #7af3b0);
-	padding: 50px;
-	max-width: 1200px;
-}
-
-.tagline {
-	color: white;
-	font-weight: 700;
-}
-
-.subtagline {
-	text-align: center;
-}
-
-.richlistmain {
-	background-image: url("./../images/field.jpg");
-	background-size: 1200px 500px;
-	max-width: 1200px;
-	padding: 50px;
-	display: block;
-  	text-align: center;
-}
-
 .centerform{
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
+	display: inline-block;
+	width: 50%;
+  margin-left: 33%;
+  margin-right: 33%;
+	margin-top: 1rem;
+	border: 0.5rem solid orange;
+	padding: 2rem;
+	border-radius: 20%;
 }
 
 .instruction {
 	font-size: 20px;
 	font-color: black;
 	display: block;
+	text-align: center;
 }
 
 .inputnetworth {
 	height: 45px;
+	margin: 0 auto; 
 }
 
 .btn {
@@ -44,7 +26,7 @@
 }
 
 ul {
-	text-align: center;
+	text-align: left;
 	max-width: 1200px;
 	list-style: none;
 }
@@ -54,15 +36,35 @@ h2 {
 	padding: 20px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.listcontainer {
+margin: 0 auto;
+width: 60%;
 }
 
 .personname {
-	color: orange;
+	color: #2a8791;
 	display: inline;
 	padding: 2rem;
+	font-size: 1.7rem;
+	font-family: 'Architects Daughter', cursive;
 }
 
 .personpic {
 	display: inline;
-	margin; 2rem;
+	margin-bottom: 1rem;
+	border-radius: 40%;
+}
+
+.personval {
+	color: #2a8791;
+	display: inline;
+	font-size: 1.2rem;
+	font-family: 'Architects Daughter', cursive;
+}
+
+.youspecial {
+	color: red;
 }

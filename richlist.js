@@ -4,80 +4,62 @@ $(function(){
 
 var celebs = [{
     _id: 0,
-    name: 'Keanu Reeves',
-    value: 2000,
-    imgSrc: './images/user91.png'
+    name: 'George Lucas',
+    value: 5100000000,
+    imgSrc: './images/celebpics/George-Lucas.jpg'
 }, {
     _id: 1,
-    name: 'second celebrity',
-    value: 1000,
-    imgSrc: './images/user91.png'
+    name: 'Oprah Winfrey',
+    value: 3200000000,
+    imgSrc: './images/celebpics/oprah.jpg'
 }, {
     _id: 2,
-    name: 'third celebrity',
-    value: 3000,
-    imgSrc: './images/user91.png'
+    name: 'Paul McCartney',
+    value: 1200000000,
+    imgSrc: './images/celebpics/paul.jpg'
 }, {
     _id: 3,
-    name: 'fourth celebrity',
-    value: 80000,
-    imgSrc: './images/user91.png'
+    name: 'Madonna',
+    value: 800000000,
+    imgSrc: './images/celebpics/madonna.jpg'
 }, {
     _id: 4,
-    name: 'fifth celebrity',
-    value: 5600,
-    imgSrc: './images/user91.png'
+    name: 'Beyonce',
+    value: 450000000,
+    imgSrc: './images/celebpics/beyonce.jpg'
 }, {
     _id: 5,
-    name: 'sixth celebrity',
-    value: 600,
-    imgSrc: './images/user91.png'
+    name: 'Jamie Oliver',
+    value: 400000000,
+    imgSrc: './images/celebpics/jamie.jpg'
 }, {
     _id: 6,
-    name: 'seventh celebrity',
-    value: 5000,
-    imgSrc: './images/user91.png'
+    name: 'Lindsay Lohan',
+    value: 500000,
+    imgSrc: './images/celebpics/lindsay2.png'
 }, {
     _id: 7,
-    name: 'eighth celebrity',
-    value: 4000,
-    imgSrc: './images/user91.png'
+    name: 'Heidi Montag',
+    value: 20000,
+    imgSrc: './images/celebpics/heidi.jpg'
 }, {
     _id: 8,
-    name: 'ninth celebrity',
-    value: 20,
-    imgSrc: './images/user91.png'
+    name: 'Dennis Rodman',
+    value: -1000000,
+    imgSrc: './images/celebpics/dennis2.png'
 }, {
     _id: 9,
-    name: 'tenth celebrity',
-    value: 20000,
-    imgSrc: './images/user91.png'
+    name: 'Kanye West',
+    value: -53000000,
+    imgSrc: './images/celebpics/kanye.jpg'
 }];
 
 
-//user enters their net worth and clicks go 
+//user enters their net worth
 var $inputNetWorth = $('#inputNetWorth');
 var $goButton = $('#goButton');
 
 var value = 0;
-
-//on click, the user will be captured as 'you'
-$goButton.on('click', function (){
-	value = $inputNetWorth.val();
-	you.value = value;
-    //push the user into the list 
-    celebs.push(you);
-    //sort the array
-    function SortByValue(a, b){
-      var aValue = a.value;
-      var bValue = b.value; 
-      return ((aValue < bValue) ? -1 : ((aValue > bValue) ? 1 : 0));
-    }
-
-    celebs.sort(SortByValue).reverse();
-
-    renderCelebList();
-});
 
 var you = {
  _id: 10,
@@ -86,16 +68,30 @@ var you = {
  imgSrc: './images/user91.png',
 }
 
+//on click, the user will be captured as 'you'
+$goButton.on('click', function (){
+	value = $inputNetWorth.val();
+	you.value = value;
+
+    //push the user into the list
+    celebs.push(you);
+
+    //sort the array
+    function SortByValue(a, b){
+      var aValue = a.value;
+      var bValue = b.value;
+      return ((aValue < bValue) ? -1 : ((aValue > bValue) ? 1 : 0));
+    }
+
+    celebs.sort(SortByValue).reverse();
+
+    renderCelebList();
+
+});
 
 
-//html
-// <li class="celebitem">
-//         <img src="./images/user91.png" width="50px" height="50px" class="celebpic">
-//         <h3>first celebrity</h3>
-//       </li>
+// show the celebrity list
 
-
-//draft 
 function renderCelebList() {
     var $html;
     var newLi;
@@ -103,21 +99,22 @@ function renderCelebList() {
     $('#celebList').empty();
 
     celebs.forEach(function(celeb){
-        // debugger;
-     newLi = '<li class="celebitem">'
+     newLi = '<div class="container">'
+     +'<div class="listcontainer">'
+     + '<li class="celebitem">'
+    + '<img src="' + celeb.imgSrc + '" width=20% height=20% class="personpic">'
        + '<h3 class="personname">' + celeb.name + '</h3>'
-        + '<img src="' + celeb.imgSrc + '" width=50px height=50px class="personpic">'
-       + '</li>';
+       + '<p class="personval">' + '£' + celeb.value + '</p>'
+       + '</li>'
+       + '</div>'
+       + '</div>';
        $html += newLi;
     });
 
     $('#celebList').html($html);
+
 }
 
 renderCelebList();
-
-
-
-
 
 });

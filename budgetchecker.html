@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Budget Checker</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,300,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite|Lato:400,300,700,900|Architects+Daughter" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/budgetcheckerstyles.css">
 
@@ -20,19 +20,16 @@
 <nav class="navbar navbar-light bg-faded">
   <ul class="nav navbar-nav">
     <li class="nav-item active">
-      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Rich List</a>
+      <a class="nav-link" href="./richlist.html">Rich List</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Financial Plan Builder</a>
+      <a class="nav-link" href="./finplanbuilder.html">Financial Plan Builder</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Budget Checker</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="./blog.html">Blog</a>
+      <a class="nav-link" href="./budgetchecker.html">Budget Checker</a>
     </li>
   </ul>
 </nav>
@@ -44,15 +41,83 @@
 	<h3 class="subtagline">But we make it easy to make it through the month without going into the red</h3>
 </div>
 
-<div class="enterbalance">
-	<form>
-		<label for="yourbalance" class="instruction">Pop in your current balance</label>
-			<input name="yourbalance" type="number" class="balanceinput" placeholder="£"></input>
-
-	</form>
-
-
+<div class="divider">
 </div>
 
+<div class="container">
+  <div class="enterbalance">
+  	<form>
+  		<label for="yourbalance" class="instruction">Pop in your current balance</label>
+  			<input name="yourbalance" type="number" class="balanceinput" placeholder="£" id="totalGot">
+    </form>
+  </div>
+</div>
+
+<div class="container clearfix">
+  <main>
+    <form>
+      <div class="expense">
+        <label for="rent">Rent</label>
+        <input name="rent" type="number" placeholder="£" class="expense-entry" id="rentVal">
+      </div>
+      <div class="expense">
+        <label for="utility-bills">Utility bills</label>
+        <input name="utility-bills" type="number" placeholder="£" class="expense-entry" id="billsVal">
+      </div>
+      <div class="expense">
+        <label for="internet">Internet/TV</label>
+        <input name="internet" type="number" placeholder="£" class="expense-entry" id="internetVal">
+      </div>
+      <div class="expense">
+        <label for="phone">Phone</label>
+        <input name="phone" type="number" placeholder="£" class="expense-entry" id="phoneVal">
+      </div>
+      <div class="expense">
+        <label for="insurance">Insurance</label>
+        <input name="insurance" type="number" placeholder="£" class="expense-entry" id="insuranceVal">
+      </div>
+      <div class="expense">
+        <label for="gym">Gym</label>
+        <input name="gym" type="number" placeholder="£" class="expense-entry" id="gymVal">
+      </div>
+      <div class="expense">
+        <label for="savings">Savings</label>
+        <input name="savings" type="number" placeholder="£" class="expense-entry" id="savingsVal">
+      </div>
+      <div class="expense">
+        <label for="other">Other</label>
+        <input name="other" type="number" placeholder="£" class="expense-entry" id="otherVal">
+      </div>
+    </form>
+  </main>
+</div>
+
+<div class="container clearfix">
+  <button type="button" class="btn btn-warning cardbutton btn-right" id="tellButton">Tell me how bad it is</button>
+</div>
+
+<div class="container clearfix">
+  <aside>
+    <h3>Total leftover</h3>
+    <p id="totalLeft"></p>
+  </aside>
+</div>
+
+<footer>
+  <nav class="navbar navbar-light bg-faded">
+    <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Find us</a>
+    </li>
+  </ul>
+</nav>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script src="./budgetchecker.js"></script>
 
 </body>

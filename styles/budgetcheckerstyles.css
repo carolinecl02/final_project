@@ -1,34 +1,57 @@
-.explain {
-	background-color: rgb(63, 155, 155);
-	padding: 50px;
-	max-width: 1200px;
-}
-
-.tagline {
-	color: rgba(191, 63, 191, 0.59);
-	font-weight: 700;
-}
-
-.subtagline {
-	text-align: center;
-}
-
 .enterbalance {
-	background-image: url("./../images/coins.jpg");
-	opacity: 0.4;
-	background-size: 1200px 500px; 
+	background-image: url("./../images/desk.jpeg");
 	padding: 70px;
-	max-width: 1200px;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
 }
 
 .instruction {
-	font-size: 20px;
+	font-size: 1.7rem;
+	font-weight: bold;
 	text-align: center;
-	font-color: black;
+	color: white;
 }
 
 .balanceinput {
 	display: block;
 	height: 50px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.expense {
+	display: block;
+	font-family: 'Special Elite', cursive;
+	width: 80%;
+}
+
+main {
+  float:left;
+  width: 65%;
+  margin-right: 2%;
+	margin-top: 1rem;
+}
+
+aside {
+  float:right;
+  width: 33%;
+	margin-top: 1rem;
+}
+
+.btn-right {
+	float: right;
+	padding-right: 10%;
 	text-align: center;
+}
+
+.bignumber {
+	font-family: 'Special Elite', cursive;
+	font-size: 2rem;
+	color: #2a8791;
+}
+
+aside h3 {
+	font-family: 'Special Elite', cursive;
 }
