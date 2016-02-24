@@ -93,7 +93,7 @@ $goButton.on('click', function (){
 // show the celebrity list
 
 function renderCelebList() {
-    var $html;
+    var $html = "";
     var newLi;
 
     $('#celebList').empty();
