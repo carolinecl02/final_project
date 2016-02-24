@@ -1,0 +1,24 @@
+main {
+  float:left;
+  width: 59%;
+  margin-right: 2%;
+  margin-top: 2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  float:left;
+  width: 35%;
+  margin-top: 2rem;
+  font-family: 'Lato', sans-serif;
+  background-color: #7af3b0;
+  border-radius: 5%;
+  height: 20rem;
+  padding: 2rem;
+}
+
+.blog-item {
+  margin-bottom: 1rem;
+}
